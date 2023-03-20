@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Hell puts program to print a line
- * return 0 (End program)
+ * main - Entry point
+ * Return: Always 0
  */
 int main(void)
 {
