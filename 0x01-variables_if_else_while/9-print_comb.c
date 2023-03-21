@@ -5,15 +5,15 @@
  */
 int main(void)
 {
-	int num;
+	int num = 58;
 
-	while (num < 10)
+	while (num < 58)
 	{
-		putchar(num + '0');
-		if (num < 10)
+		putchar(num);
+		if (num < 57)
 		{
-			putchar(',');
-			putchar(' ');
+			putcha(44);
+			putchar(32);
 		}
 		num++;
 	}
