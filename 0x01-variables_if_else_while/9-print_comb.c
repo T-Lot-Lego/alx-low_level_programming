@@ -5,17 +5,16 @@
  */
 int main(void)
 {
-	int num = 58;
+	int num;
 
-	while (num < 58)
+	for (num = 0; num < 10; num++)
 	{
-		putchar(num);
-		if (num < 57)
+		putchar(num + '0');
+		if (num < 9)
 		{
-			putcha(44);
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
-		num++;
 	}
 	putchar('\n');
 	return (0);
