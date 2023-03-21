@@ -5,26 +5,23 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k;
 
-	i = 0;
-
-	while (i < 1000)
+	for (i = 0; i <= 9; i++)
 	{
-		j = i / 100;
-		k = (i / 10) % 10;
-		l = i % 100;
-		if (j < k && k < l)
+		for (j = 0; j <= 9; j++)
 		{
-			putchar(l + '0');
-			putchar(k + '0');
-			putchar(j + '0');
-		if (i < 789)
-		{
-			putchar(',');
-			putchar(' ');
+			for (k = 0; k <= 9; k++)
+			{
+				if (i != j && j != k && i != k)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					putchar(' ');
+				}
+			}
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
